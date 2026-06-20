@@ -33,16 +33,16 @@ To identify customers who are at risk of leaving the telecom service, so the com
 
 ---
 
-### Model Performance (Test Data — After Tuning)
+### Model Performance (Test Data - After Tuning)
  
 | Model | Accuracy | Key Observation |
 |---|---|---|
-| Decision Tree | ~80.27% | Highest recall (0.649) — catches more churners but more false positives |
-| Random Forest | ~81.3% | Highest precision (0.70) — fewest false alarms |
-| **AdaBoost** ✅ | **81.41%** | **Best overall — strongest accuracy, good balance, no overfitting** |
+| Decision Tree | ~80.27% | Highest recall (0.649) - catches more churners but more false positives |
+| Random Forest | ~81.3% | Highest precision (0.70) - fewest false alarms |
+| **AdaBoost** ✅ | **81.41%** | **Best overall - strongest accuracy, good balance, no overfitting** |
 | GradientBoost | ~81.12% | Stable performance, minimal change before/after tuning |
  
-> **AdaBoost (tuned)** was selected as the final model — it achieved the highest test accuracy of **81.41%**, maintained consistency between train and test performance (no overfitting), and showed the best balance across precision, recall, and F1-score for churn detection.
+> **AdaBoost (tuned)** was selected as the final model - it achieved the highest test accuracy of **81.41%**, maintained consistency between train and test performance (no overfitting), and showed the best balance across precision, recall, and F1-score for churn detection.
 
 ---
 
