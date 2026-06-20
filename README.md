@@ -1,4 +1,4 @@
-# ML Ensemble Techniques - Telecom Customer Churn Prediction
+# 📡📉 ML Ensemble Techniques - Telecom Customer Churn Prediction
 
 This project tackles high customer churn rates faced by a telecom company by building and comparing multiple machine learning models to predict which customers are likely to leave - enabling the company to take proactive retention action before it's too late.
 
@@ -33,16 +33,16 @@ To identify customers who are at risk of leaving the telecom service, so the com
 
 ---
 
-### Model Performance (Test Data - After Tuning)
-
-| Model | Accuracy | Precision | Recall | Key Observation |
-|---|---|---|---|---|
-| Decision Tree | ~80.27% | - | 0.649 | Highest recall - catches more churners but more false positives |
-| Random Forest | ~81.3% | 0.7007 | - | Highest precision - fewest false alarms |
-| **AdaBoost** ✅ | **81.41%** | - | 0.5737 | **Best overall - strongest accuracy, good balance, no overfitting** |
-| GradientBoost | ~81.12% | - | - | Minimal change before/after tuning; stable but no clear gain |
-
-> **AdaBoost (tuned)** was selected as the final model - it achieved the highest test accuracy of **81.41%**, maintained consistency between train and test performance (no overfitting), and showed the best balance across precision, recall, and F1-score for churn detection.
+### Model Performance (Test Data — After Tuning)
+ 
+| Model | Accuracy | Key Observation |
+|---|---|---|
+| Decision Tree | ~80.27% | Highest recall (0.649) — catches more churners but more false positives |
+| Random Forest | ~81.3% | Highest precision (0.70) — fewest false alarms |
+| **AdaBoost** ✅ | **81.41%** | **Best overall — strongest accuracy, good balance, no overfitting** |
+| GradientBoost | ~81.12% | Stable performance, minimal change before/after tuning |
+ 
+> **AdaBoost (tuned)** was selected as the final model — it achieved the highest test accuracy of **81.41%**, maintained consistency between train and test performance (no overfitting), and showed the best balance across precision, recall, and F1-score for churn detection.
 
 ---
 
